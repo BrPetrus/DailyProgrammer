@@ -1,0 +1,30 @@
+- Image processing
+	- Open & Read & Write & Close
+	- Start with RGB pixel and convert it to grayscale by sum/3
+- Floyd-Steinberg algorithm
+	- Find closest pallet colour
+	- Possible optimizations:
+		- Use bit shifting instead of /16
+
+
+
+
+255 ... 0
+middle: 127.5
+
+[new, old, difference]
+[0, 90, -90]
+[255, 128, 127]
+
+get the last byte from int(4 bytes / 32 bits)
+	11111111 11111111 11111111 11111111
+	& 0xFF -> 00000000 00000000 00000000 11111111
+	=
+	00000000 00000000 00000000 11111111
+
+	11111111 11111111 11111111 10111011
+	& 0xFF
+	=
+	00000000 00000000 00000000 10111011
+
+
