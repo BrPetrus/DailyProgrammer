@@ -1,0 +1,7 @@
+set title "Worm Wars - SIR model"
+set xlabel "Generations"
+set ylabel "Number of systems"
+
+plot "output" u 1:3 title "Susceptible" w lines, \
+"output" u 1:4 title "Infected" w lines, \
+"output" u 1:5 title "Recovered" w lines
